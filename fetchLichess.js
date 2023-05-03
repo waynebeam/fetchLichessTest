@@ -18,7 +18,7 @@ async function getGames() {
 
         }
     );
-    if (res.statusText !== 'OK') {
+    if (!res.ok) {
         console.log('busted');
         return;
     }
